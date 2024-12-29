@@ -1,22 +1,27 @@
 {
-  "name": "tda-expressjs-boilerplate",
-  "version": "0.0.0",
-  "private": false,
+  "name": "tda-express-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for TDA Express.js application.",
+  "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js",
-    "start": "node app.js"
+    "devStart": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "http-errors": "~2.0.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.0",
+    "mongoose": "^8.9.1",
     "morgan": "~1.9.1",
     "passport": "^0.7.0",
     "passport-azure-ad": "^4.3.5",
