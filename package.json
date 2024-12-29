@@ -4,8 +4,8 @@
   "description": "A boilerplate for TDA Express.js application.",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "devStart": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
