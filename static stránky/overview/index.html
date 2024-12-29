@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="nav-logo">
+    <a class="n-img" href="#home"><img src="./logo.png"></a>
+    <a class="n-header" href="#home">FitTrack <span>Edu</span></a>
+  </div>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+  <nav class="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
+    <a href="../login/login.html" id="login-btn">Log in</a>
+  </nav>
+</header>
+
+<section class="home" id="home">
+  
+    <div class="home-content">
+      <h1>FitTrack Edu</h1>
+      <p>How it works, our mission with this app, and more...</p>
+      <a href="#features" class="btn">Learn More</a>
+      <div class="social-icons">
+        <a target="_blank" href="https://www.linkedin.com/in/michael-valenta-226331336/"><i
+          class='bx bxl-linkedin-square'></i></a>
+        <a target="_blank" href="https://www.instagram.com/valenta.misko/"><i
+          class='bx bxl-instagram-alt'></i></a>
+        <a target="_blank" href="https://x.com/ARetiredMike"><i class='bx bxl-twitter'></i></a>
+        <a target="_blank" href="https://github.com/MiskoValenta"><i class='bx bxl-github'></i></a>
+    </div>
+    </div>
+</section>
+
+<section class="features" id="features">
+  <div class="features-content">
+    <h2 class="heading">Features</h2>
+    <p>FitTrack Edu streamlines physical education with tools for teachers, students, and administrators.</p>
+    
+    <div class="features-grid">
+      <div class="feature">
+        <i class='bx bx-calendar'></i>
+        <h3>Calendar</h3>
+        <p>Schedule events and track activities effortlessly.</p>
+      </div>
+
+      <div class="feature">
+        <i class='bx bx-user'></i>
+        <h3>Student Management</h3>
+        <p>Manage student performance and attendance easily.</p>
+      </div>
+
+      <div class="feature">
+        <i class='bx bx-book'></i>
+        <h3>Documentation</h3>
+        <p>Keep important school documents organized.</p>
+      </div>
+
+      <div class="feature">
+        <i class='bx bx-message'></i>
+        <h3>Communication</h3>
+        <p>Stay connected with students and parents seamlessly.</p>
+      </div>
+    </div>    
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-content">
+    <h2 class="heading">About</h2>
+    <div class="about-paragraph">
+      <i class='bx bxs-heart-circle'></i>
+      <p>FitTrack Edu is a platform that simplifies physical education management in schools.</p>
+    </div>
+    <div class="about-paragraph">
+      <i class='bx bxs-heart-circle'></i>
+      <p>Our app is designed to help teachers, students, and administrators organize sports activities, track performance, and manage documentation efficiently.</p>
+    </div>
+    <div class="about-paragraph">
+      <i class='bx bxs-heart-circle'></i>
+      <p>With FitTrack Edu, you can easily schedule events, manage student performance, organize school documents, and communicate with students and teachers.</p>
+    </div>
+  </div>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./home-background.jpg" alt="About Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./logo.png" alt="About Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./home-background.jpg" alt="About Image 3">
+      </div>
+    </div>
+    <button class="carousel-control prev" onclick="prevSlide()">
+      <i class='bx bx-left-arrow-alt'></i>
+    </button>
+    <button class="carousel-control next" onclick="nextSlide()">
+      <i class='bx bx-right-arrow-alt'></i>
+    </button>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Us</span></h2>
+  <form action="#">
+    <div class="input-box">
+      <input type="text" placeholder="Full name">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-box">
+      <input type="number" placeholder="Phone Number">
+      <input type="text" placeholder="Subject">
+    </div>
+
+    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+<section class="faq" id="faq">
+  <h2 class="heading">FAQs</h2>
+
+    <div class="faq-content">
+      <div class="question">
+        <h3>How do I sign up for FitTrack Edu?</h3>
+        <i class='bx bx-down-arrow-alt'></i>
+      </div>
+      <div class="answer">
+        <p>Signing up for FitTrack Edu is a simple process. Start by visiting our official website and locating the "Sign Up" button on the homepage. Once you click the button, you will be redirected to a registration form. Fill in your personal details, such as your full name, email address, and a secure password of your choice. After submitting the form, you will receive a verification email in your inbox. Open the email and click the provided link to verify your account. Upon successful verification, you can log in and start exploring our platform.</p>
+      </div>
+    </div>
+
+      <div class="faq-content">
+        <div class="question">
+          <h3>How do I schedule an event?</h3>
+          <i class='bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer">
+          <p>Scheduling an event in FitTrack Edu is both efficient and straightforward. After logging into your account, navigate to the "Calendar" section located in the dashboard menu. In the calendar view, you'll see a button labeled "Add Event." Click the button, and a form will appear asking for event details such as the title, date, time, and location. Optionally, you can add a description to provide context for the event and set reminders to keep participants notified. Save your changes, and the event will be automatically displayed on your calendar, accessible to all relevant attendees.</p>
+        </div>
+      </div>
+
+      <div class="faq-content">
+        <div class="question">
+          <h3>How do I manage student performance?</h3>
+          <i class='bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer">
+          <p>Managing student performance on FitTrack Edu gives you robust tools to stay organized and track progress. Log in and head to the "Student Management" tab in your dashboard. Here, you'll find detailed records of student attendance, grades, and individual performance data. Use the filters to view specific student details, or sort by class and subject for a broader overview. The platform allows you to upload test scores, assignments, and other performance metrics quickly. You can even generate performance graphs and export reports to share with parents or colleagues.</p>
+        </div>
+      </div>
+
+      <div class="faq-content">
+        <div class="question">
+          <h3>How do I communicate with students and parents?</h3>
+          <i class='bx bx-down-arrow-alt'></i>
+        </div>
+        <div class="answer">
+          <p>Communication within FitTrack Edu is seamless and intuitive. After logging in, open the "Communication" tab from the main menu. From here, you can compose and send messages to individual students, groups, or even entire classes. The platform supports various communication types, including announcements, reminders, and direct messages. Additionally, you can attach documents or links to provide further context. For parents, you can enable regular updates about their child's performance, attendance, or upcoming events, ensuring everyone stays informed and engaged. Replies can also be tracked directly through the portal for better conversation management.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <div class="social">
+    <a target="_blank" href="https://www.linkedin.com/in/michael-valenta-226331336/"><i
+            class='bx bxl-linkedin-square'></i></a>
+    <a target="_blank" href="https://www.instagram.com/valenta.misko/"><i class='bx bxl-instagram-alt'></i></a>
+    <a target="_blank" href="https://x.com/ARetiredMike"><i class='bx bxl-twitter'></i></a>
+    <a target="_blank" href="https://github.com/MiskoValenta"><i class='bx bxl-github'></i></a>
+</div>
+
+<ul class="list">
+    <li>
+        <a href="#features">Features</a>
+    </li>
+
+    <li>
+        <a href="#about">About</a>
+    </li>
+
+    <li>
+        <a href="#contact">Contact</a>
+    </li>
+
+    <li>
+        <a href="#faq">FAQ</a>
+    </li>
+    
+    <li>
+        <a href="#">Privacy Policy</a>
+    </li>
+</ul>
+<p class="copyright">
+    &copy; 2025 FitTrack Edu. All rights reserved.
+</p>
+</footer>
+  <script src="./script.js"></script>
+  <script src="./faq.js"></script>
+  <script src="./about.js"></script>
+  <script src="./feature.js"></script>
+</body>
+</html>

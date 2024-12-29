@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style2.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="./logo.png">
+                    <h2>FitTrack <span>Edu</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <h3>Users</h3>
+                </a>
+                <a href="#" class="active">
+                    <i class='bx bx-line-chart'></i>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-envelope'></i>
+                    <h3>Tickets</h3>
+                    <i class='bx bx-message-rounded-dots message-count'>27</i>
+                </a>
+                <a href="#">
+                    <i class='bx bx-badge-check'></i>
+                    <h3>Survey</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bxs-book-reader'></i>
+                    <h3>Documents</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-info-circle'></i>
+                    <h3>Info Hub</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-plus'></i>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <i class='bx bx-log-out'></i>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Performance <span> Tracker</span></h1>
+            <form id="performanceForm">
+                <label for="activity">Activity</label>
+                <select id="activity" name="activity">
+                    <option value="100m">100m</option>
+                    <option value="1500m">1500m</option>
+                    <option value="Granát">Granát</option>
+                    <option value="Koule">Koule</option>
+                    <option value="Other">Other</option> <!-- Added Other -->
+                </select>
+            
+                <!-- Input for other activity (initially hidden) -->
+                <input id="otherActivity" type="text" name="otherActivity" placeholder="Enter other activity" style="display: none;" />
+            
+                <label for="performance">Performance</label>
+                <input type="text" id="performance" name="performance" />
+            
+                <button type="button" id="savePerformance">Save</button>
+            </form>
+            
+            
+        
+            <table id="performanceTable">
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Performance</th>
+                        <th>Mark</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Entries will appear here -->
+                </tbody>
+            </table>
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+         <!-- Right Section -->
+         <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="dark-mode">
+                    <i class='bx bx-sun active'></i>
+                    <i class='bx bxs-moon'></i>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Ing. Michael Valenta</b></p>
+                        <small class="text-muted">Teacher</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./logo.png">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="./logo.png">
+                    <h2>Miško Valenta</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <i class='bx bx-bell'></i>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <i class='bx bxs-volume-full'></i>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <i class='bx bxs-edit-alt'></i>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                        <i class='bx bx-dots-vertical-rounded'></i>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <i class='bx bx-message-square-add'></i>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+<script src="./script2.js"></script>
+</html>
