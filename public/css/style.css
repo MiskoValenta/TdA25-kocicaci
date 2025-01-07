@@ -162,3 +162,7 @@ body.dark-mode-variables input{
 body.dark-mode-variables td button{
     border: .7px solid var(--color-dark-variant);
 }
+
+.deleteBtn{
+    margin-top: -3px;
+}

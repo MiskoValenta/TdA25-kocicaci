@@ -95,7 +95,7 @@ section {
   position: relative;
   z-index: 1;
   height: 100vh; /* Ensure the section takes full viewport height */
-  background: url(./home-background.jpg) no-repeat center center/cover;
+  background: url('/images/home-background.jpg') no-repeat center center/cover;
   background-size: cover;
 }
 
