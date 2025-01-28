@@ -370,23 +370,38 @@ span{
 .contact{
   background-color: var(--second-bg-color);
 }
-.contact h2{
+.contact h2 {
   margin-bottom: 3rem;
   color: white;
-}
-.contact form{
-  max-width: 70rem;
-  margin: 1rem auto;
   text-align: center;
-  margin-bottom: 3rem;
 }
-.contact form .input-box{
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  background: var(--second-bg-color); /* Match the background color */
+  padding: 2rem;
+}
+
+.contact-form {
+  max-width: 600px; /* Adjust the width as needed */
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.contact-form .input-box {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.contact form .input-box input,
-.contact form textarea{
+
+.contact-form .input-box input,
+.contact-form textarea {
   width: 100%;
   padding: 1.6rem;
   color: var(--text-color);
@@ -396,8 +411,13 @@ span{
   margin: 1rem 0;
   resize: none;
 }
-.contact form .btn{
+
+.contact-form .btn {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3rem;
 }
 
 .faq {

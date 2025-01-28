@@ -75,6 +75,22 @@ h2 {
     font-weight: 600;
     font-size: 1.4rem;
 }
+.logo h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo{
+    transition: all 0.3s ease;
+}
+
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
 
 h3 {
     font-weight: 500;
@@ -116,9 +132,9 @@ b {
 .container {
     display: grid;
     width: 96%;
-    margin: 0 auto;
+    margin: 10px auto;
     gap: 1.8rem;
-    grid-template-columns: 12rem auto 23rem;
+    grid-template-columns: 15rem auto 23rem;
 }
 
 aside {
@@ -138,13 +154,13 @@ aside .toggle .logo {
 }
 
 aside .toggle .logo img {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     margin-top: -5px;
 }
 
 aside .toggle .logo span {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--color-primary);
 }
@@ -443,6 +459,20 @@ main {
 
     aside .logo h2 {
         display: inline;
+        font-size: 1.1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    aside .logo span{
+        display: inline;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside .logo img{
+        height: 7px;
     }
 
     aside .sidebar h3 {
@@ -462,6 +492,12 @@ main {
     aside .toggle .close {
         display: inline-block;
         cursor: pointer;
+    }
+    aside i{
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .right-section {
@@ -504,6 +540,9 @@ main {
 
     .right-section .nav button i {
         font-size: 2rem;
+    }
+    main {
+        margin-top: 80px;
     }
 }
 
